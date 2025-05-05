@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OverLoading</title>
+  <style>
+    .container{
+      background-color: cyan;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      width: 40rem;
+      height: 10rem;
+      
+    }
+    .buttons{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 5rem;
+      align-items: center;
+    }
+    button{
+      margin: auto;
+      border-radius: 10px;
+      background-color: rgb(155, 26, 148);
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.3rem;
+      border: 1px solid black;
+      box-shadow: 20px black;
+
+    }
+    .container-loading{
+      background-color: white;
+      width: 90%;
+      margin: auto;
+      border: 2px solid green;
+      border-radius: 5px;
+      height: 3rem;
+    }
+    .loading{
+      background-color: gray;
+      height: 100%;
+      width: 0;
+    }
+    .pracentage{
+      font-size: 1.3rem;
+      font-weight: 900;
+      position: absolute;
+      left: 50%;
+      top: 17%;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- -------------- MAIN CONTAINER ----------------- -->
+  <div class="container">
+    <!-- ----------------- container of buttons -------------- -->
+    <div class="buttons">
+      <button class="start" id="start__loading">Start</button>
+      <button class="stop" id="stop__loading">Stop</button>
+      <button class="reset" id="reset__loading">Clear</button>
+    </div>
+    <!-- ---------------------- loading container --------------- -->
+    <div class="container-loading">
+      <!-- ++++++++++++++++++++++++ shows the precentage of the loading ++++++++++++++++ -->
+      <div class="pracentage">0%</div>
+      <!-- ---------------------- loades the data ------------------------------- -->
+      <div class="loading" id="loading">
+        
+      </div>
+    </div>
+  </div>  
+  <script src="main.js"></script>
+</body>
+</html>
